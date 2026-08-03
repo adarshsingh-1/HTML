@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body style="background-color:rgb(139, 203, 233);">
+    <h1><u>Student Registration Form</u></h1>
+    <form action="welcome.html" autocomplete="on" method="get" target="_self">
+        <fieldset>
+        <legend><i>Personal Information</i></legend>
+        <label>Full Name:</label>
+        <input type="text" name="firstname" placeholder="First Name" required />
+        <input type="text" name="Middlename" placeholder="Middle Name">
+        <input type="text" name="Lastname" placeholder="Last Name">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email"  required placeholder="abc123@gmail.com"/>
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" required/>
+        <br><br>
+
+        <label>Phone No:</label>
+        <input type="tel" required/>
+        <br><br>
+
+        <label>Age:</label>
+        <input type="number" required/>
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br> 
+
+    </fieldset>
+    <fieldset>
+        <legend><i>Preferences & Etras</i></legend>
+        <label>Upload Profile Piture:</label>
+        <input type="file" required/>
+        <br><br>
+
+        <label>Color:</label>
+        <input type="color" required/>
+        <br><br>
+
+        <label>Search Course:</label>
+        <input list="Course" name="" id="" required>
+        <datalist id="Course">
+            <option>Engineering</option>
+            <option>Management</option>
+        </datalist>
+        <br><br>
+
+        <label>Course Interest Range:</label>
+        <input type="range" required/>
+        <br><br>
+
+        <label>Personal Website:</label>
+        <input type="url" required/>
+        <br><br>
+
+        <label>Course Type:</label>
+        <select required>
+            <optgroup label="Engineering">
+            <option>CE</option>
+            <option>EE</option>
+            <option>EC</option>
+        </optgroup>
+        <optgroup label="Management">
+            <option>BBA</option>
+            <option>MBA</option>
+        </optgroup>
+        </select>
+        <br><br>
+
+        <label>Prefered country:</label>
+        <input list="Countries" name="" id="" required>
+        <datalist id="Countries">
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+        </datalist>
+        <br><br>
+
+        <label>Agree to Terms:</label><input type="checkbox"><label for="">I Agree</label>
+    </fieldset>
+
+
+    <fieldset>
+        <legend><i>Date & Time Info</i></legend>
+
+        <label>Select DOB:</label>
+        <input type="date">
+        <br><br>
+
+        <label>Select the Time:</label>
+        <input type="time">
+        <br><br>
+
+        <label>Select Month:</label>
+        <input type="month">
+        <br><br>
+
+        <label>Select Week:</label>
+        <input type="week">
+        <br><br>
+
+        <label>Select Date and Time:</label>
+        <input type="datetime-local">
+        <br><br>
+
+    </fieldset>
+    <fieldset>
+        <input type="checkbox" required><label for=""> I confrom my Information.</label><br>
+        <center><input type="submit" value="Register">
+        <input type="reset" value="Reset"></center>
+    </fieldset>
+
+</body>
+</html>

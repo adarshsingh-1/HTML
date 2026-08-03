@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body style="background-color:rgb(90, 198, 228);">
+    <h1><u>Employee Registration Form</u></h1>
+    <form action="welcome.html" autocomplete="on" method="get" target="_self">
+        <fieldset>
+        <legend><i>Personal Information</i></legend>
+
+        <label>Employee ID:</label>
+        <input type="password" placeholder="EMP001" required/>
+        <br><br>
+
+        <label>Full Name:</label>
+        <input type="text" name="firstname" placeholder="First Name" required />
+        <input type="text" name="Middlename" placeholder="Middle Name">
+        <input type="text" name="Lastname" placeholder="Last Name" required>
+        <br><br>
+
+        <label>Age:</label>
+        <input type="number" min="18" max="60" required/>
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" required/>
+        <br><br>
+
+        <label>Phone No:</label>
+        <input type="tel" required/>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email"  required />
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Others">
+        <label for="other">Others</label>
+        <br><br>
+
+        <label>Address:</label><br>
+        <textarea rows="4" cols="40" required></textarea>
+        <br>
+    </fieldset>
+
+    <fieldset>
+        <legend><i>Job Information</i></legend>
+        <label>Department:</label>
+        <select required>
+            <option>IT</option>
+            <option>HR</option>
+            <option>Finance</option>
+            <option>Marketing</option>
+            <option>Sales</option>
+        </select>
+        <br><br>
+        
+        <label>Designation::</label>
+        <input type="text"  placeholder="Software Developer" required />
+        <br><br>
+
+        <label>Date of Joining:</label>
+        <input type="date" required/>
+        <br><br>
+        
+        <label>Employment Type:</label>
+        <select>
+            <option>Full Time</option>
+            <option>Part Time</option>
+            <option>Intern</option>
+        </select>
+        <br><br>
+
+        <label>Salary:</label>
+        <input type="text" placeholder="50000" required/>
+        <br><br>
+
+        <label>Shift:</label>
+        <select required>
+            <option>Morning</option>
+            <option>Evening</option>
+            <option>Night</option>
+        </select>
+        <br><br>
+        
+    </fieldset>
+
+
+    <fieldset>
+        <legend><i>Additional Information</i></legend>
+
+        <label>Upload Profile Piture:</label>
+        <input type="file" required/>
+        <br><br>
+        
+
+        <label>Blood Group:</label>
+        <input type="text">
+        <br><br>
+
+        <label>Marital Status:</label>
+        <input list="Staus" name="" id="" required>
+        <datalist id="Staus">
+            <option>Single</option>
+            <option>Married</option>
+        </datalist>
+        <br><br>
+
+        <label>Nationality:</label>
+        <select required>
+            <optgroup>
+            <option>INDIAN</option>
+            <option>NRI</option>
+            <option>OTHERS</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <label>Emergency Contact:</label>
+        <input type="tel">
+        <br><br>
+
+        <label>Experience:</label>
+        <input type="number">
+        <br><br>
+
+        <label>Skills:</label>
+        <input type="checkbox"> Java
+        <input type="checkbox"> Python
+        <input type="checkbox"> C++
+        <input type="checkbox"> HTML
+        <input type="checkbox"> CSS
+        <br><br>
+        
+    </fieldset>
+    <fieldset>
+        <input type="checkbox" required><label for=""> I Agree to the Terms & Conditions</label>
+        <center><input type="submit" value="Register">
+        <input type="reset" value="Reset"></center>
+    </fieldset>
+    </form>
+</body>
+</html>
